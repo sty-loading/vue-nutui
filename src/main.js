@@ -3,15 +3,14 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import fnResize from 'fn-resize'
-import 'cssreset-init'  // css-reset 引入即可
-import { Dialog, Picker } from '@nutui/nutui'  // 文档见 http://nutui.jd.com/#/intro
-import yy from 'yy-util'  //使用方法见 https://github.com/sty-loading/yy-utils
-// 设置rem
-fnResize()
+import 'cssreset-init'
+import { Dialog, Picker, TabBar } from '@nutui/nutui'
+import yy from 'yy-util'
 
 Dialog.install(Vue)
 Picker.install(Vue)
-
+TabBar.install(Vue)
+fnResize()
 Vue.config.productionTip = false
 Vue.prototype.$yy = yy
 
